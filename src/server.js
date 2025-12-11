@@ -9,9 +9,9 @@ app.use(express.json())
 
 console.log(await getAdminHashes())
 
-app.get('/get', async (req, res) => { 
-    res.json(await GetData())
-})
+// app.get('/get', async (req, res) => { 
+//     res.json(await GetData())
+// })
 
 app.post('/toggle', async (req, res) => {
     const data = req.body
