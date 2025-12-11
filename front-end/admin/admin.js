@@ -12,7 +12,7 @@ async function initializeLogin() {
     const passwordInput = document.getElementById("admin-password")
 
     async function verifyLogin(password) {
-        const response = await fetch("http://localhost:3000/admin-login", {
+        const response = await fetch("https://rifa-diik.onrender.com/admin-login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -47,12 +47,12 @@ async function initializeAdmin() {
     `
 
     async function getData() {
-        const response = await fetch("http://localhost:3000/get")
+        const response = await fetch("https://rifa-diik.onrender.com/get")
         return (await response.json())
     }
 
     async function alterCell(id) {
-        const response = await fetch("http://localhost:3000/toggle", {
+        const response = await fetch("https://rifa-diik.onrender.com/toggle", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

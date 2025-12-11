@@ -4,7 +4,7 @@ import { createConnection } from "./sockets.js"
 createConnection()
 
 async function getData() {
-    const response = await fetch("http://localhost:3000/get")
+    const response = await fetch("https://rifa-diik.onrender.com/get")
     return (await response.json())
 }
 
